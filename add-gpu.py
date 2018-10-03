@@ -6,7 +6,6 @@
 #   Author: James Anderton & Jason George
 #   Date: 8/2/2018
 #   Purpose: To add a GPU unit to a Google Compute Engine Instance
-#   REQUIREMENT: $GOOGLE_APPLICATION_CREDENTIALS Environment variable pointing to your GCP service account Key File
 #
 ##################################################################################################################
 import os
