@@ -3,10 +3,14 @@ pipeline {
     label 'jenkins-jx-base'
   }
   stages {
-    stage('print') {
+    stage('Docker Build') {
       steps {
-        sh '''touch /tmp/test
-echo hello world'''
+        sh 'docker build -t gce-add-gpu:latest .'
+      }
+    }
+    stage('Push to Repo') {
+      steps {
+        sh 'echo toDO: push to repo'
       }
     }
   }
