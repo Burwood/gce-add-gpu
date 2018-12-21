@@ -1,6 +1,6 @@
 pipeline {
   agent {
-    label 'jenkins-bash'
+    label 'jenkins-jx-base'
   }
   stages {
     stage('print') {
