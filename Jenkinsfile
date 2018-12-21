@@ -1,5 +1,10 @@
 pipeline {
-  agent any
+  agent {
+    docker {
+      image 'centos'
+    }
+
+  }
   stages {
     stage('print') {
       steps {
