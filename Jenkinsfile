@@ -4,6 +4,12 @@ pipeline {
   }
   stages {
     stage('Docker Build') {
+      agent {
+        dockerfile {
+          filename 'Dockerfile'
+        }
+
+      }
       steps {
         sh 'docker build -t gce-add-gpu:latest .'
       }
