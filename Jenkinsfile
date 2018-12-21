@@ -1,9 +1,6 @@
 pipeline {
   agent {
-    docker {
-      image 'centos'
-    }
-
+    label 'jenkins-bash'
   }
   stages {
     stage('print') {
